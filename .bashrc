@@ -35,6 +35,7 @@ alias ..="cd .."
 alias ...="cd ../../"
 alias sctl="sudo systemctl"
 alias uctl="systemctl --user"
+alias gacm="git add . ; git commit -m"
 bind "set completion-ignore-case on"
 export EDITOR=nvim
 
