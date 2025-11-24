@@ -1,0 +1,45 @@
+[modules]
+left = [ "Workspaces"]
+center = [ "WindowTitle" ]
+right = [ [ "Clock", "Privacy", "Settings", "Updates" ] ]
+
+[appearance]
+font_name = "Thunderman"
+style = "Gradient"
+scale_factor = 1.6
+success_color = "#a6e3a1"
+text_color = "#cdd6f4"
+workspace_colors = [ "#fab387", "#b4befe", "#cba6f7" ]
+[appearance.primary_color]
+base = "#fab387"
+text = "#1e1e2e"
+[appearance.danger_color]
+base = "#f38ba8"
+weak = "#f9e2af"
+[appearance.background_color]
+base = "#1e1e2e"
+weak = "#313244"
+strong = "#45475a"
+[appearance.secondary_color]
+base = "#11111b"
+strong = "#1b1b25"
+
+[settings]
+lock_cmd =  "uwsm-app -- hyprlock --grace 30"
+shutdown_cmd = "shutdown now"
+suspend_cmd = "systemctl suspend"
+reboot_cmd = "systemctl reboot"
+logout_cmd = "uwsm stop"
+
+[updates]
+check_cmd = "checkupdates; paru -Qua"
+update_cmd = 'ghostty -e bash -c "paru; if [ $? -eq 0 ]; then echo Updated successfully; else echo Update failed...; fi; echo Press enter to exit; read" &'
+[clock]
+format = "%a %D %l:%M %p"
+
+[workspaces]
+visibility_mode = "MonitorSpecific"
+workspace_names = [" ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " ", " "]
+
+[window_title]
+mode = "Title"
