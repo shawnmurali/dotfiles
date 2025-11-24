@@ -1,0 +1,6 @@
+border-radius=5
+background-color=#FAB3871F
+default-timeout=10000
+border-color=#916753
+font=Thunderman 14
+on-button-right=invoke-default-action
