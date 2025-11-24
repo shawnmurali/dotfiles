@@ -1,0 +1,36 @@
+[general]
+destination = "$HOME/.config/hypr/monitors.conf"
+
+[power_events]
+
+[power_events.dbus_query_object]
+path = "/org/freedesktop/UPower/devices/line_power_ADP1"
+
+[[power_events.dbus_signal_match_rules]]
+object_path = "/org/freedesktop/UPower/devices/line_power_ADP1"
+
+
+[profiles.Docked]
+config_file = "/home/shawn/.config/hyprdynamicmonitors/hyprconfigs/Docked.go.tmpl"
+config_file_type = "template"
+[profiles.Docked.conditions]
+
+[[profiles.Docked.conditions.required_monitors]]
+description = "LG Display 0x0555 0x020303A0"
+monitor_tag = "monitor0"
+
+[[profiles.Docked.conditions.required_monitors]]
+description = "Dell Inc. AW3423DWF 6XR72S3"
+monitor_tag = "monitor1"
+
+
+[profiles.Laptop-battery]
+config_file = "/home/shawn/.config/hyprdynamicmonitors/hyprconfigs/Laptop-battery.go.tmpl"
+config_file_type = "template"
+
+[profiles.Laptop-battery.conditions]
+power_state = "BAT"
+
+[[profiles.Laptop-battery.conditions.required_monitors]]
+description = "LG Display 0x0555 0x020303A0"
+monitor_tag = "monitor0"
