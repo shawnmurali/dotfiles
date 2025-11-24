@@ -29,7 +29,6 @@ config_file = "/home/shawn/.config/hyprdynamicmonitors/hyprconfigs/Laptop.go.tmp
 config_file_type = "template"
 
 [profiles.Laptop.conditions]
-power_state = "BAT"
 
 [[profiles.Laptop.conditions.required_monitors]]
 description = "LG Display 0x0555 0x020303A0"
