@@ -33,7 +33,7 @@ logout_cmd = "uwsm stop"
 
 [updates]
 check_cmd = "checkupdates; paru -Qua"
-update_cmd = 'ghostty -e bash -c "paru; if [ $? -eq 0 ]; then echo Updated successfully; else echo Update failed...; fi; echo Press enter to exit; read" &'
+update_cmd = "hyprctl dispatch exec '[workspace special:u] alacritty -e bash -c \"paru; if [ $? -eq 0 ]; then echo Updated successfully; else echo Update failed...; fi; echo Press enter to exit; read\"'"
 [clock]
 format = "%a %D %l:%M %p"
 

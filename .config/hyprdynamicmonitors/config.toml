@@ -24,13 +24,13 @@ description = "Dell Inc. AW3423DWF 6XR72S3"
 monitor_tag = "monitor1"
 
 
-[profiles.Laptop-battery]
-config_file = "/home/shawn/.config/hyprdynamicmonitors/hyprconfigs/Laptop-battery.go.tmpl"
+[profiles.Laptop]
+config_file = "/home/shawn/.config/hyprdynamicmonitors/hyprconfigs/Laptop.go.tmpl"
 config_file_type = "template"
 
-[profiles.Laptop-battery.conditions]
+[profiles.Laptop.conditions]
 power_state = "BAT"
 
-[[profiles.Laptop-battery.conditions.required_monitors]]
+[[profiles.Laptop.conditions.required_monitors]]
 description = "LG Display 0x0555 0x020303A0"
 monitor_tag = "monitor0"
