@@ -117,4 +117,6 @@ function alias_completion {
 }
 alias_completion
 
-# eval "$(starship init bash)"
+eval "$(starship init bash)"
+
+. "$HOME/.local/share/../bin/env"
